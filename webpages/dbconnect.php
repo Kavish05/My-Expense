@@ -5,10 +5,11 @@
 	$db = "expense";
 
 	// Create connection
-	$conn = mysqli_connect($servername, $username, $password, $db);
+	//$conn = mysqli_connect($servername, $username, $password, $db);
 
 	// Check connection
-	if (!$conn) {
+	if (!$conn = mysqli_connect($servername, $username, $password, $db))
+	{
 		die("Connection failed: " . mysqli_connect_error());
 	}
 	//echo "Connected successfully !";
