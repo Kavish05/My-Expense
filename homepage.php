@@ -43,8 +43,8 @@ $name= $_SESSION['username'];
 			<ul>
 				<li><a href="#">Home</a></li>
 				<li><a href="#transaction">Add Transaction</a></li>
-				<li><a href="webpages/profile.php"> <?php  echo $_SESSION['username']; ?></a></li>
-				<li><a href="webpages/signin.html">Log Out</a></li>
+				<li><a href="profile.php"> <?php  echo $_SESSION['username']; ?></a></li>
+				<li><a href="signin.html">Log Out</a></li>
 			</ul>
 		</header>
 
@@ -74,7 +74,7 @@ $name= $_SESSION['username'];
 				<button class="transac_button" onclick="openForm()">Add Transaction</button>
 
 				<div class="form-popUp" id="myForm">
-					<form action="webpages/addtransaction.php" method="POST" class="form-Container">
+					<form action="addtransaction.php" method="POST" class="form-Container">
 					    <h1>Add Transaction</h1>
 					    
 					    <label for=""><b>Select category</b></label> <br>
