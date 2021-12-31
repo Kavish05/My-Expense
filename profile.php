@@ -49,7 +49,8 @@ $name= $_SESSION['username'];
             </div>
             
 			<?php
-					
+				
+				include("getData.php");
 				include("dbconnect.php");
 				$result = mysqli_query($conn,"SELECT * FROM transaction WHERE username= '$name' ORDER BY date ASC");
 			
@@ -87,7 +88,6 @@ $name= $_SESSION['username'];
 		</div>
 		</div>
     <script type="text/javascript"> 
-		include("getData.php");
       var ctx = $("chartjs_bar");
                 var myChart = new Chart(ctx, {
                     type: 'bar',
