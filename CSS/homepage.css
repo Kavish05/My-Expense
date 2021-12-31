@@ -1,0 +1,398 @@
+@import url('https://fonts.googleapis.com/css2?family=Genos&family=M+PLUS+1:wght@300&family=Metamorphous&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&display=swap');
+
+/*----------------Main-------------------------------*/
+body {
+	font-family: Arial, Helvetica, sans-serif;
+
+}
+
+#main {
+	padding: 89px 0 250px;
+	background-color:rgba(0,0,0,0.5);
+	color: #ffffff;
+}
+
+#mainheading{
+	font-family: 'Audiowide', cursive;
+	color:#00adb5;
+	font-size:120px;
+	text-shadow: 2px 2px 2px #ffffff;
+}
+
+#subheading{
+	font-family: 'Audiowide', cursive;
+	font-size:21px;
+
+}
+
+.heading {
+	text-align: center;
+}
+
+
+/*----------------About Us-------------------------------*/
+#description {
+	padding: 89px 0 93px;
+	background-color:rgba(0,0,0,0.5);
+	color: #ffffff;
+}
+
+#description .section-title {
+	font-family: 'Genos', sans-serif;
+	color:#ffffff;
+	font-size:45px;
+	text-align:center;
+	text-shadow: 2px 2px 2px #00adb5;
+	
+}
+
+.about {
+	font-family: "Gill Sans", sans-serif;
+}
+
+/*----------------username search for transaction-------------------------------*/
+
+#uname .section-title {
+	font-family: 'Genos', sans-serif;
+	color:#ffffff;
+	font-size:45px;
+	text-align:center;
+	text-shadow: 2px 2px 2px #00adb5;
+	
+}
+
+#uname{
+	background: #000;
+	color: #fff;
+	padding: 110px 0 300px;
+	
+}
+
+.uname-input{
+	text-align: center;
+	width: 50%;
+	border: 0 none;
+	background: transparent;
+	opacity: 0.9;
+	border: 1px solid #00fff5;
+	padding: 14px;
+	color: #ffffff;
+	border-radius: 10px;
+}
+
+.uname_btn{
+	background-color: #fff;
+	border: 1px solid #fff;
+	color: #000;
+	font-weight: 400;
+	letter-spacing: 1px;
+	margin: 0;
+	padding: 15px 25px;
+	text-transform: uppercase;
+	width: 10%;
+	cursor: pointer;
+}
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 90%;
+
+}
+
+td, th {
+    border: 1px solid #00adb5;
+    text-align: left;
+    padding: 10px;
+
+}
+
+tr:nth-child(even) {
+    background-color: grey;
+}
+/*----------------Contact Us-------------------------------*/
+
+#contact {
+	padding: 89px 0 93px;
+	background-color:rgba(0,0,0,0.5);
+	color: #ffffff;
+}
+
+#contact .section-title {
+	font-family: 'Genos', sans-serif;
+	color:#ffffff;
+	font-size:45px;
+	text-align:center;
+	text-shadow: 2px 2px 2px #00adb5;
+	
+}
+
+
+#contact .contact-form {
+	margin-top: 80px;
+}
+
+#contact .contact-form input, 
+#contact .contact-form textarea {
+
+	display: block;
+	width: 110%;
+	font-weight: 300;
+    padding: 18px 26px;
+    width:50%;
+	color: #ffffff;
+	background: transparent;
+	border: 1px solid #00fff5;
+	border-radius: 10px;
+}
+
+#contact .contact-form input:focus,
+#contact .contact-form input:active,
+#contact .contact-form textarea:focus,
+#contact .contact-form textarea:active {
+	outline: none;
+}
+
+#contact .contact-form textarea {
+	resize: none;
+}
+
+#contact .contact-form input::-webkit-input-placeholder,
+#contact .contact-form textarea::-webkit-input-placeholder {
+  color: #ffffff;
+}
+
+
+#contact .contact-form .row:last-of-type {
+	margin-top: 30px;
+}
+
+#contact .contact-form .btn {
+	display: block;
+	margin: 53px auto 0;
+	font-size: 13px;
+	width: 170px;
+	padding: 10px 0;
+}
+.contactHeading{
+	font-family: 'Michroma', sans-serif;
+	color:#ffffff;
+	font-size:20px;
+}
+
+
+#button1{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+#button1 body{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	flex-direction: column;
+	background:#2f242d;
+}
+#button1 a{
+	position: relative;
+	display: inline-block;
+	padding: 10px 30px;
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #00FFF5;
+	background:rgb(38, 44, 55);
+	font-size: 16px;
+	margin: 10px;
+	letter-spacing:2px;
+}
+#button1 a:hover{
+	background: #00FFF5;
+	color: #ffffff;
+	transition: 0.5s;
+	transition-delay: 1s;
+}
+#button1 a span{
+	position: absolute;
+	display: block;
+	background: #00FFF5;
+}
+#button1 a span:nth-child(1)
+{
+	left: 0;
+	bottom: 0;
+	width: 1px;
+	height: 100%;
+	transform: scaleY(0);
+	transform-origin: top;
+	transition: transform 0.25s;
+}
+#button1 a:hover span:nth-child(1)
+{
+	transform: scaleY(1);
+	transform-origin: bottom;
+	transition: transform 0.25s;
+}
+#button1 a span:nth-child(2)
+{
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 1px;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform 0.25s;
+	transition-delay: 0.25s;
+}
+#button1 a span:nth-child(2)
+{
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 1px;
+	transform: scaleX(0);
+	transform-origin: right;
+	transition: transform 0.25s;
+	transition-delay: 0.25s;
+}
+#button1 a:hover span:nth-child(2)
+{
+	transform: scaleX(1);
+	transform-origin: left;
+	transition: transform 0.25s;
+}
+
+#button1 a span:nth-child(3)
+{
+	right: 0;
+	bottom: 0;
+	width: 1px;
+	height: 100%;
+	transform: scaleY(0);
+	transform-origin: bottom;
+	transition: transform 0.25s;
+	transition-delay: 0.5s;
+}
+#button1 a:hover span:nth-child(3)
+{
+	transform: scaleY(1);
+	transform-origin: top;
+	transition: transform 0.25s;
+	transition-delay: 0.5s;
+}
+
+#button1 a span:nth-child(4)
+{
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 1px;
+	transform: scaleX(0);
+	transform-origin: left;
+	transition: transform 0.25s;
+	transition-delay: 0.75s;
+}
+#button1 a:hover span:nth-child(4)
+{
+	transform: scaleY(1);
+	transform-origin: right;
+	transition: transform 0.25s;
+	transition-delay: 0.75s;
+}
+
+/*----------------About Us-------------------------------*/
+#footer {
+	padding: 89px 0 93px;
+	background-color:rgba(0,0,0,0.5);
+	color: #ffffff;
+}
+/*--------------Transaction------------------------*/
+#transaction {
+	padding: 8px 0 93px 20px;
+	background-color:rgba(0,0,0,0.5);
+	color: #ffffff;
+}
+.transac_button {
+  background: #00fff5;
+  background-image: linear-gradient(to bottom, #00fff5, #00adb5);
+  border-radius: 10px;
+  font-family: Georgia;
+  color: #ffffff;
+  font-size: 15px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.transac_button:hover {
+  background: #00fff5;
+  text-decoration: none;
+}
+
+
+
+/* The popup form - hidden by default */
+.form-popUp {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  right: 570px;
+  border: 3px solid #00fff5;
+  border-radius: 5px;
+
+  z-index: 9;
+  align-content: center;
+}
+
+/* Add styles to the form container */
+.form-Container {
+  max-width: 100%;
+  padding: 10px 20px 10px 20px;
+  background-color: #393E46;
+
+}
+
+/* Full-width input fields */
+.form-Container input[type=text], .form-Container input[type=date] {
+  width: 95%;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+/* Set a style for the save button */
+.form-Container .btn {
+  background-color: #00adb5;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  margin-bottom:10px;
+  opacity: 0.8;
+  border-radius: 10px;
+}
+
+/* Add a red background color to the cancel button */
+.form-Container .cancel {
+  background-color: red;
+  border-radius: 10px;
+
+}
+
+/* Add some hover effects to buttons */
+.form-Container .btn:hover, .open-button:hover {
+  opacity: 1;
+}
+
+#income{
+	color: #00adb5;
+}
+
+#expenditure{
+	color: #cc0033;
+}

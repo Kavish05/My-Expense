@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Sign Up</title>
+
+        <link rel="stylesheet" type="text/css" href="../CSS/signin_up.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/nav.css">
+
+        <style> 
+    		body {
+    			background: #222831;
+    			}
+        </style>
+
+            <script>
+                    function validate(){
+                    if(validateblank()==true && validatepassword()==true){
+                        return true;
+                    }
+                    else{
+                        return false;
+                    }
+                }
+                function validatepassword(){
+                    var p=document.getElementById("psw").value;
+                    var cp=document.getElementById("psw-repeat").value;
+
+                    if(p.trim()===cp.trim()){
+                        alert("Password match");
+                        return true;
+                    }
+                    else{
+                        alert("Passwords do not match");
+                        return false;
+                    }
+                }
+                function validateblank(){
+                    var fn=document.getElementById("name").value;
+                    var ln=document.getElementById("uname").value;
+                    var e=document.getElementById("email").value;
+                    var p=document.getElementById("psw").value;
+                    var cp=document.getElementById("psw-repeat").value;
+
+                    if((fn.trim().length==0 || fn<1 || fn>0)&&(fn.trim().length<3)){
+                        alert("Enter a Name with alphabets only");
+                        return false;
+                    }
+                    if((ln.trim().length==0 || ln<1 || ln>0)&&(ln.trim().length<3)){
+                        alert("Enter a Username");
+                        return false;
+                    }
+                    if(e.trim().length==0 ){
+                        alert("Enter an email address");
+                        return false;
+                    }
+                    if(p.trim().length<8){
+                        alert("Enter a password that is greater than 8");
+                        return false;
+                    }
+                    
+                    return true;
+                }
+            
+              /*  window.addEventListener("scroll", function(){
+                    var header = document.querySelector("header");
+                    header.classList.toggle("sticky",window.scrollY > 0);
+                    })
+            */
+            </script>
+        
+    </head>
+    <body>
+        <!------------Navigation Bar---------->
+        <header id= "Nav">
+            <a href="../index.html" class="logo"><img class="logo" src= "image/logowhite.png" alt="logo" style = "width:90px; height:30px"></a>
+            <ul>
+                <li><a href="../index.html#">Home</a></li>
+                <li><a href="../index.html#description">About</a></li>
+                <li><a href="signin.html">Sign In</a></li>
+            </ul>
+        </header>
+
+        <div class="main">
+
+            <section class="signup">
+                <div class="card">
+                    <div class="form">
+                        <form action="register.php" method="POST"  onsubmit="return validate()">
+                            <h2 class="form-title">Create account</h2>
+                            <div class="form-group">
+                                <input type="text" class="form-input" name="fname" id="name" placeholder="Enter your Name"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" class="form-input" name="username" id="uname" placeholder="Username"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-input" name="email" id="email" placeholder="Your Email"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-input" name="password_1" id="psw" placeholder="Password"/>
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-input" name="password_2" id="psw-repeat" placeholder="Repeat your password"/>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="submit" name="submit" id="submit" class="button-submit" value="Sign up"/>
+                            </div>
+                        </form>
+                        <p class="signin">
+                            Have already an account ? <a href="signin.html" class="signin-link">Login here</a>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+
+    </body>
+</html>

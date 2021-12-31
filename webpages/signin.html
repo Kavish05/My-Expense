@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Sign In</title>
+
+        <link rel="stylesheet" type="text/css" href="../CSS/signin_up.css">
+        <link rel="stylesheet" type="text/css" href="../CSS/nav.css">
+
+        <style> 
+    		body {
+    			background: #222831;
+    			}
+
+    	</style>
+        
+        <script>
+                function validate(){
+                    if(validateblank()==true && validatepassword()==true){
+                        return true;
+                    }
+                    else{
+                        return false;
+                    }
+                }
+                function validateblank(){
+                    var fn=document.getElementById("username").value;
+                    var p=document.getElementById("psw").value;
+                    if((fn.trim().length==0 || fn<1 || fn>0)&&(fn.trim().length<3)){
+                        alert("Enter your username");
+                        return false;
+                    }
+                    if((p.trim().length==0 || p<1 || p>0)&&(p.trim().length<8)){
+                        alert("Enter your password");
+                        return false;
+                    }
+                    return true;
+                }
+        </script>
+    </head>
+    <body>
+            <!------------Navigation Bar---------->
+            <header id= "Nav">
+                <a href="../index.html" class="logo"><img class="logo" src= "image/logowhite.png" alt="logo" style = "width:90px; height:30px"></a>
+                <ul>
+                    <li><a href="../index.html#">Home</a></li>
+                    <li><a href="../index.html#description">About</a></li>
+                    <li><a href="signin.html">Sign In</a></li>
+                </ul>
+            </header>
+
+            <script type="text/javascript">
+                window.addEventListener("scroll", function(){
+                    var header = document.querySelector("header");
+                    header.classList.toggle("sticky",window.scrollY > 0);
+                    })
+            </script>
+
+             <div class="main">
+
+                <section class="signup">
+                    <div class="card">
+                        <div class="form">
+                            <form action="register.php" method="POST" id="signup-form" class="signup-form" onsubmit="return validate()">
+                                <h2 class="form-title">Sign In</h2>
+                               
+                                <div class="form-group">
+                                    <input type="text" class="form-input" name="username" id="username" placeholder="Username"/>
+                                </div>
+                                <div class="form-group">
+                                    <input type="password" class="form-input" name="password" id="psw" placeholder="Password"/>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <input type="submit" name="login_user" id="submit" class="button-submit" value="Sign In"/>
+                                </div>
+                            </form>
+                            <p class="signin">
+                                Don't have an account ? <a href="signup.html" class="signin-link">Sign up here</a>
+                            </p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+    </body>
+</html>
