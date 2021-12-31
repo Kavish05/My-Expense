@@ -1,6 +1,9 @@
 <?php
-$con  = mysqli_connect("localhost","root","","expense");
- if (!$con) {
+$servername = "fdb31.runhosting.com";
+$username = "4016712_expense"; //username of user
+$password = "expense02"; //password of above user
+$db = "4016712_expense";
+if (!$conn = mysqli_connect($servername, $username, $password, $db)){
      # code...
     echo "Problem in database connection! Contact administrator!" . mysqli_error();
  }else{
