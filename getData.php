@@ -10,7 +10,7 @@ $con  = mysqli_connect("localhost","root","","expense");
          while ($row = mysqli_fetch_array($result)) { 
  
             $Category[]  = $row['Category'];
-            $amount[] = $row['TotalSales'];
+            $amount[] = $row['Amount'];
         }
  
  
