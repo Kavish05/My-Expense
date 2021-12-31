@@ -8,7 +8,7 @@ if (!$conn = mysqli_connect($servername, $username, $password, $db)){
     echo "Problem in database connection! Contact administrator!" . mysqli_error();
  }else{
          $sql ="SELECT * FROM transaction WHERE username= '$name' ORDER BY date ASC";
-         $result = mysqli_query($con,$sql);
+         $result = mysqli_query($conn,$sql);
          $chart_data="";
          while ($row = mysqli_fetch_array($result)) { 
  
