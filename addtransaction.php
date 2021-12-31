@@ -2,12 +2,7 @@
 session_start();
 $name= $_SESSION['username'];
 
-$servername = "localhost";
-$username = "root"; //username of user
-$password = ""; //password of above user
-$db = "expense";
-
-$conn = mysqli_connect("$servername","$username","$password","$db");
+include("dbconnect.php");
 
 if(isset($_POST['save_radio']))
 {
@@ -25,11 +20,11 @@ if(isset($_POST['save_radio']))
  if($query_run)
     {
         $_SESSION['status'] = "Inserted Successfully";
-        header("Location: ../homepage.php");
+        header("Location: homepage.php");
     }
     else{
         $_SESSION['status'] = "Inserted Successfully";
-        header("Location: ../homepage.php");
+        header("Location: homepage.php");
     }
  }
 ?>
