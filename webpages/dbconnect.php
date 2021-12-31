@@ -1,7 +1,7 @@
 <?php
 	$servername = "fdb31.runhosting.com";
 	$username = "4016712_expense"; //username of user
-	$password = "Expense01"; //password of above user
+	$password = "Expense*01"; //password of above user
 	$db = "expense";
 
 	// Create connection
