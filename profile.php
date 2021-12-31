@@ -78,13 +78,13 @@ $name= $_SESSION['username'];
 				mysqli_close($conn);
 			
 				?>
-		</div>
 
 		<div style="width:60%;hieght:20%;text-align:center">
             <h4 class="section-title" color= rgba(0,0,0,0.5)> Chart </h4>
             <canvas  id="chartjs_bar"></canvas> 
         </div> 
 
+		</div>
     <script type="text/javascript">
       var ctx = document.getElementById("chartjs_bar").getContext('2d');
                 var myChart = new Chart(ctx, {
