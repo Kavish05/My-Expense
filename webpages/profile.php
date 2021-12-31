@@ -23,8 +23,8 @@ $name= $_SESSION['username'];
 		<header id= "Nav">
 			<a href="index.html" class="logo"><img class="logo" src= "image/logowhite.png" alt="logo" style = "width:90px; height:30px"></a>
 			<ul>
-				<li><a href="../index.php#">Home</a></li>
-				<li><a href="../index.php#transaction">Add Transaction</a></li>
+				<li><a href="../homepage.php#">Home</a></li>
+				<li><a href="../homepage.php#transaction">Add Transaction</a></li>
 				<!--li><a href="#contact">Contact Us</a></li-->
 				<li><a href="#"> <?php  echo $_SESSION['username']; ?></a></li>
 				<li><a href="signin.html">Log Out</a></li>
