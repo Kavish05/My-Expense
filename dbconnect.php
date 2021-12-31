@@ -5,7 +5,6 @@
 	$db = "4016712_expense";
 
 	// Create connection
-	//$conn = mysqli_connect($servername, $username, $password, $db);
 
 	// Check connection
 	if (!$conn = mysqli_connect($servername, $username, $password, $db))
