@@ -81,9 +81,10 @@ $name= $_SESSION['username'];
 
 		<div style="width:60%;hieght:20%;text-align:center">
             <h4 class="section-title" color= rgba(0,0,0,0.5)> Chart </h4>
-            <canvas  id="chartjs_bar"></canvas> 
         </div> 
-
+		<div class = "chart-container barchart">
+		<canvas  id="chartjs_bar"></canvas> 
+		</div>
 		</div>
     <script type="text/javascript">
       var ctx = document.getElementById("chartjs_bar").getContext('2d');
