@@ -10,7 +10,7 @@ $name= $_SESSION['username'];
 		<link rel="stylesheet" type="text/css" href="../CSS/nav.css">
 		<script src="//code.jquery.com/jquery-1.9.1.js"></script>
   		<script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-
+		  
 		<style> 
 		body {
 			background: #222831;
@@ -86,7 +86,8 @@ $name= $_SESSION['username'];
 		<canvas  id="chartjs_bar"></canvas> 
 		</div>
 		</div>
-    <script type="text/javascript">
+    <script type="text/javascript"> 
+		include("getData.php");
       var ctx = $("chartjs_bar");
                 var myChart = new Chart(ctx, {
                     type: 'bar',
