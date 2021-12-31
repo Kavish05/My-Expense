@@ -87,6 +87,7 @@ $name= $_SESSION['username'];
 		</div>
 		</div>
     <script type="text/javascript"> 
+		include("getData.php");
       var ctx = $("chartjs_bar");
                 var myChart = new Chart(ctx, {
                     type: 'bar',
