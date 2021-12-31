@@ -1,8 +1,8 @@
 <?php
 	$servername = "fdb31.runhosting.com";
 	$username = "4016712_expense"; //username of user
-	$password = "Expense*01"; //password of above user
-	$db = "expense";
+	$password = "expense02"; //password of above user
+	$db = "4016712_expense";
 
 	// Create connection
 	//$conn = mysqli_connect($servername, $username, $password, $db);
