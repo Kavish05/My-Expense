@@ -1,9 +1,9 @@
 <html>
 	<body>
 		<?php
-			$servername = "localhost";
-			$username = "root"; //username of user
-			$password = ""; //password of above user
+			$servername = "fdb31.runhosting.com";
+			$username = "4016712_expense"; //username of user
+			$password = "Expense01"; //password of above user
 			$db = "expense";
 
 			// Create connection
