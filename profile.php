@@ -93,13 +93,13 @@ $name= $_SESSION['username'];
                         labels:<?php echo json_encode($Category); ?>,
                         datasets: [{
                             backgroundColor: [
-                               "#5969ff",
-                                "#ff407b",
-                                "#25d5f2",
-                                "#ffc750",
-                                "#2ec551",
-                                "#7040fa",
-                                "#ff004e"
+                               	"#FFFFFF",
+                                "#FFFFFF",
+                                "#FFFFFF",
+                                "#FFFFFF",
+                                "#FFFFFF",
+                                "#FFFFFF",
+                                "#FFFFFF"
                             ],
                             data:<?php echo json_encode($Amount); ?>,
                         }]
