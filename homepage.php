@@ -69,7 +69,7 @@ $name= $_SESSION['username'];
 
 	<!------------Transaction---------->
 		<div id="transaction">
-			<p> Click on the button to add either an <span id="income">income</span> or an <span id="expenditure">expediture</span></p>
+			<p> Click on the button to add either an <span id="income">income</span> or an <span id="expenditure">expenditure</span></p>
 		
 				<button class="transac_button" onclick="openForm()">Add Transaction</button>
 
