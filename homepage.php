@@ -104,8 +104,8 @@ $name= $_SESSION['username'];
 			<div class="leftgrid">	
 			    
 					<p style="text-align:center"><a href="mailto:my.expenses05@gmail.com">my.expenses05@gmail.com</a></p>
-				
 					<p style="text-align:center" class="copyright"> © <span id="year">2021</span> <span>MY-Expense</span>. All Rights Reserved</p>
+					<p  style="text-align:center">Design by Kavish Goorapah</p>
 			</div>	
 			<p>	
 
