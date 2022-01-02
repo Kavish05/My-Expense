@@ -80,9 +80,7 @@ $name= $_SESSION['username'];
 			
 				?>
 
-		<div style="width:50%;height:20%;text-align:center">
-            <h4 class="section-title" color= rgba(0,0,0,0.5)> Chart </h4>
-        </div> 
+        <h4 class="section-title" color= rgba(0,0,0,0.5) style="text-align:center"> Chart </h4>
 		<div class = "chart-container chartjs_pie">
 		<canvas  id="chartjs_pie"></canvas> 
 		</div>
