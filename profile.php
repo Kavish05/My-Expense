@@ -106,7 +106,7 @@ $name= $_SESSION['username'];
                     options: {
                         legend: {
                         display: true,
-                        position: 'bottom',
+                        position: 'top',
  
                         labels: {
                             fontColor: '#71748d',
