@@ -100,7 +100,7 @@ $name= $_SESSION['username'];
                                 "#7040fa",
                                 "#ff004e"
                             ],
-                            data:<?php echo json_encode($Totalamount); ?>,
+                            data:<?php echo json_encode($TotalAmount); ?>,
                         }]
                     },
                     options: {
