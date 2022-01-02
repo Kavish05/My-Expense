@@ -112,9 +112,9 @@ $name= $_SESSION['username'];
                         position: 'bottom',
  
                         labels: {
-                            fontColor: '#71748d',
-                            fontFamily: 'Circular Std Book',
-                            fontSize: 14,
+                            fontColor: '00fff5',
+                            fontFamily: 'Michroma', sans-serif;,
+                            fontSize: 20,
                         }
                     },
  
