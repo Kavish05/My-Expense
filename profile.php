@@ -92,7 +92,7 @@ $name= $_SESSION['username'];
                 var myChart = new Chart(ctx, {
                     type: 'pie',
                     data: {
-                        labels:<?php echo json_encode($catogory); ?>,
+                        labels:<?php echo json_encode($category); ?>,
                         datasets: [{
                             backgroundColor: [
                                "#5969ff",
@@ -103,7 +103,7 @@ $name= $_SESSION['username'];
                                 "#7040fa",
                                 "#ff004e"
                             ],
-                            data:<?php echo json_encode($amount#endregion); ?>,
+                            data:<?php echo json_encode($amount); ?>,
                         }]
                     },
                     options: {
