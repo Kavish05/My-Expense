@@ -88,7 +88,7 @@ $name= $_SESSION['username'];
 		</div>
 		</div>
     <script type="text/javascript"> 
-      var ctx = $("chartjs_bar");
+      var ctx = document.getElementById("chartjs_bar").getContext('2d');
                 var myChart = new Chart(ctx, {
                     type: 'bar',
                     data: {
