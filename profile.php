@@ -1,5 +1,3 @@
-@import url('https://fonts.googleapis.com/css2?family=Michroma&display=swap');
-@import url(https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css)
 <?php
 session_start();
 $name= $_SESSION['username'];
@@ -12,7 +10,6 @@ $name= $_SESSION['username'];
 		<link rel="stylesheet" type="text/css" href="../CSS/nav.css">
 		<script src="//code.jquery.com/jquery-1.9.1.js"></script>
   		<script src="//cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
-		  
 		  
 		<style> 
 		body {
@@ -115,10 +112,9 @@ $name= $_SESSION['username'];
                         position: 'bottom',
  
                         labels: {
-                            font-family: 'Michroma', sans-serif;
-							color:#ffffff;
-							color: #FFF;
-							font-size:14px;,
+                            fontColor: '#71748d',
+                            fontFamily: 'Circular Std Book',
+                            fontSize: 20,
                         }
                     },
  
