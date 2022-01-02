@@ -83,7 +83,7 @@ $name= $_SESSION['username'];
 		<div style="width:60%;hieght:20%;text-align:center">
             <h4 class="section-title" color= rgba(0,0,0,0.5)> Chart </h4>
         </div> 
-		<div class = "chart-container chartjs_bar">
+		<div class = "chart-container chartjs_pie">
 		<canvas  id="chartjs_pie"></canvas> 
 		</div>
 		</div>
@@ -92,7 +92,7 @@ $name= $_SESSION['username'];
                 var myChart = new Chart(ctx, {
                     type: 'pie',
                     data: {
-                        labels:<?php echo json_encode($category); ?>,
+                        labels:<?php echo json_encode($amount); ?>,
                         datasets: [{
                             backgroundColor: [
                                "#5969ff",
@@ -103,11 +103,11 @@ $name= $_SESSION['username'];
                                 "#7040fa",
                                 "#ff004e"
                             ],
-                            data:<?php echo json_encode($amount); ?>,
+                            data:<?php echo json_encode($category); ?>,
                         }]
                     },
                     options: {
-                           legend: {
+                        legend: {
                         display: true,
                         position: 'bottom',
  
