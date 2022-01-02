@@ -146,7 +146,7 @@ tr:nth-child(even) {
 /* The popup form - hidden by default */
 .form-popUp {
   display: none;
-  position: fixed;
+  position: absolute;
   bottom: 0;
   right: 570px;
   left: 500px;
@@ -155,7 +155,7 @@ tr:nth-child(even) {
   margin-top: -100px; /* Negative half of height. */
   margin-left: -250px; /* Negative half of width. */
 
-  z-index: 9;
+  z-index: 0;
   align-content: center;
 }
 
