@@ -12,8 +12,8 @@ if (!$conn = mysqli_connect($servername, $username, $password, $db)){
          $chart_data="";
          while ($row = mysqli_fetch_array($result)) { 
  
-            $Category[]  = $row['Category'];
-            $Amount[] = $row['Amount'];
+            $Category[]  = $row['category'];
+            $Amount[] = $row['amount'];
         }
  
  
