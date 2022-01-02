@@ -84,11 +84,11 @@ $name= $_SESSION['username'];
             <h4 class="section-title" color= rgba(0,0,0,0.5)> Chart </h4>
         </div> 
 		<div class = "chart-container chartjs_bar">
-		<canvas  id="chartjs_bar"></canvas> 
+		<canvas  id="chartjs_pie"></canvas> 
 		</div>
 		</div>
     <script type="text/javascript"> 
-      var ctx = document.getElementById("chartjs_bar").getContext('2d');
+      var ctx = document.getElementById("chartjs_pie").getContext('2d');
                 var myChart = new Chart(ctx, {
                     type: 'pie',
                     data: {
