@@ -11,7 +11,7 @@
    die("Connection failed: " . mysqli_connect_error());
    }
    //echo "Connected successfully !";
-   }else{
+   else{
    $sql ="SELECT category,sum(amount) FROM transaction WHERE username= '$name' GROUP BY category";
    $result = mysqli_query($conn,$sql);
    $chart_data="";
