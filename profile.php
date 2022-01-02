@@ -86,6 +86,7 @@ $name= $_SESSION['username'];
 		</div>
     <script type="text/javascript"> 
       var ctx = document.getElementById("chartjs_pie").getContext('2d');
+	  ctx.height = 200
                 var myChart = new Chart(ctx, {
                     type: 'pie',
                     data: {
