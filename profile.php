@@ -103,7 +103,6 @@ $name= $_SESSION['username'];
                             data:<?php echo json_encode($TotalAmount); ?>,
                         }]
                     },
-					var options: {responsive: false,}
                     options: {
                         legend: {
                         display: true,
