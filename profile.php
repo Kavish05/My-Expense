@@ -86,7 +86,7 @@ $name= $_SESSION['username'];
 		</div>
     <script type="text/javascript"> 
       var ctx = document.getElementById("chartjs_bar").getContext('2d');
-	  ctx.height = 50
+	  ctx.height = 150
                 var myChart = new Chart(ctx, {
                     type: 'pie',
                     data: {
