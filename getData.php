@@ -12,12 +12,12 @@
    }
    //echo "Connected successfully !";
    else{
-   $sql ="SELECT category,SUM(amount) FROM transaction WHERE username= '$name' GROUP BY category";
+   $sql ="SELECT category,SUM(amount) as TotalAmount FROM transaction WHERE username= '$name' GROUP BY category";
    $result = mysqli_query($conn,$sql);
    $chart_data="";
    while ($row = mysqli_fetch_assoc($result)) { 
 
-   $amount[]  = $row['amount'];
+   $Totalamount[]  = $row['Totalamount'];
    $category[] = $row['category'];
    }
  
