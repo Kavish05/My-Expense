@@ -146,7 +146,7 @@ tr:nth-child(even) {
 /* The popup form - hidden by default */
 .form-popUp {
   display: none;
-  position: absolute;
+  position: auto;
   bottom: 0;
   left: 500px;
   border: 3px solid #00fff5;
