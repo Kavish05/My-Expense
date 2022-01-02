@@ -17,8 +17,8 @@
    $chart_data="";
    while ($row = mysqli_fetch_assoc($result)) { 
 
-   $category[]  = $row['category'];
-   $amount[] = $row['amount'];
+   $amount[]  = $row['amount'];
+   $category[] = $row['category'];
    }
  
  
