@@ -82,13 +82,13 @@ $name= $_SESSION['username'];
 
         <h4 class="section-title" color= rgba(0,0,0,0.5) style="text-align:center"> Chart </h4>
 		<div class = "chart-container chartjs_pie">
-		<canvas  id="chartjs_bar"></canvas> 
+		<canvas  id="chartjs_pie"></canvas> 
 		</div>
     <script type="text/javascript"> 
       var ctx = document.getElementById("chartjs_bar").getContext('2d');
-	  ctx.height = 200
+	  ctx.height = 50
                 var myChart = new Chart(ctx, {
-                    type: 'bar',
+                    type: 'pie',
                     data: {
                         labels:<?php echo json_encode($category); ?>,
                         datasets: [{
