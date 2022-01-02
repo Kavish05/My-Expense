@@ -84,7 +84,6 @@ $name= $_SESSION['username'];
 		<div class = "chart-container chartjs_pie">
 		<canvas  id="chartjs_pie"></canvas> 
 		</div>
-		</div>
     <script type="text/javascript"> 
       var ctx = document.getElementById("chartjs_pie").getContext('2d');
                 var myChart = new Chart(ctx, {
