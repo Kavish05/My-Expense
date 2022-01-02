@@ -82,7 +82,7 @@ $name= $_SESSION['username'];
 
         <h4 class="section-title" color= rgba(0,0,0,0.5) style="text-align:center"> Chart </h4>
 		<div class = "chart-container chartjs_pie">
-		<canvas  id="chartjs_pie"></canvas> 
+		<canvas  id="chartjs_pie" style="display: block; height: 500px; width: 500px;"></canvas> 
 		</div>
     <script type="text/javascript"> 
       var ctx = document.getElementById("chartjs_pie").getContext('2d');
