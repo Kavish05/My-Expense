@@ -109,7 +109,7 @@ $name= $_SESSION['username'];
                         position: 'top',
  
                         labels: {
-                            fontColor: '#71748d',
+                            fontColor: '#fff',
                             fontFamily: 'Circular Std Book',
                             fontSize: 20,
                         }
