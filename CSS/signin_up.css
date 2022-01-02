@@ -22,7 +22,7 @@ body {
 
 .card {
   width: 660px;
-  position: relative;
+  position: auto;
   margin: 0 auto;
    
 }
